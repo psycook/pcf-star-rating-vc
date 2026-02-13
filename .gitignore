@@ -2,12 +2,14 @@
 
 # dependencies
 /node_modules
+package-lock.json
 
 # generated directory
 **/generated
 
 # output directory
 /out
+/bundle
 
 # msbuild output directories
 /bin
@@ -16,8 +18,34 @@
 # MSBuild Binary and Structured Log
 *.binlog
 
+# NuGet
+*.nupkg
+*.snupkg
+
 # Visual Studio cache/options directory
 /.vs
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider / JetBrains
+.idea/
 
 # macos
 .DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# PCF test harness
+.pcftest/
+
+# Environment files
+.env
+.env.local
